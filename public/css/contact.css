@@ -1,0 +1,34 @@
+#contact-id{
+text-align: center;
+
+}
+a.navbar-brand {
+    color: #fff !important;
+}
+
+a.nav-link {
+    color: #fff !important;
+}
+.navbar-expand-lg .navbar-nav{
+    padding: 0;
+  }
+
+  body{
+    background-image: url("paper001.jpg");
+    background-image: no-repeat;
+  }
+  #contact-parent{
+
+    text-align: center;
+  }
+
+  #comment{
+
+    background-color: aqua;
+  }
+
+  .alert-success {
+    color:red;
+    background-color : yellow;
+    border-color: black;
+  }

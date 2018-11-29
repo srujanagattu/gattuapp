@@ -1,0 +1,102 @@
+.myHeader
+{
+	background-color: lightblue;
+	color: blue;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 83%;
+	border: 2px ridge gray;
+	text-align: center;
+	
+}
+.intro{
+	color:Green;
+	text-align: center;
+	padding: 20px;
+	background-color: #e6f2ff;
+	border-radius: 25px;
+	font-family: 'Times New Roman', Times, serif
+}
+
+#profile-picture{
+	border-radius: 25px;
+	text-align: center;	
+	background-image: url("paper001.jpg");
+	border: 2px ridge gray;
+	padding: 20px;
+	color: black
+	
+
+}
+.section-header {
+	color: grey;
+	font-size: 23px;
+}
+
+#current-section {
+	border: 2px groove gray;
+    padding: 20px;
+	background-color: #fefbd8;
+	
+}
+
+#past-section {
+	border: 2px groove gray;
+    padding: 20px;
+	background-color: #ddffcc;
+	
+}
+
+#future-section {
+	border: 2px groove gray;
+    padding: 20px;
+	background-color: #ccccff;
+}
+#motive-video {
+
+	
+    margin-left: 38%;
+    
+}
+#myschedule{
+	background-color: #e6f2ff;
+	padding: 5px;
+	color: #0047b3;
+	padding:10px;
+	
+}
+
+.section-list{
+	color:#003d99;
+}
+#aside-id {
+	background-color: #e6f2ff;
+	padding:10px;
+	color:#009973;
+	
+}
+.aside-header{
+	
+	color: green;
+	font-size:23px;
+}
+#asidep{
+	padding:5px;
+}
+#asidep1{
+	padding:5px;
+}
+.myFooter{
+	background-color: gray;
+	color: white;
+	font-family: "Georgia", serif;
+	font: normal;
+	font-size: 120%;
+	padding : 3px 10px 3px 20px;
+}
+a.navbar-brand {
+    color: #fff !important;
+}
+
+a.nav-link {
+    color: #fff !important;
+}

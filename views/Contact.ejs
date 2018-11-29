@@ -1,0 +1,96 @@
+<% include header %>
+<br><br><br>
+<link rel="stylesheet" type="text/css" href="css/contact.css" />
+<div class="container-fluid" id=contact-id>
+  <!-- BootStrap grid system using one row that could have several columns (when the screen size is large enough) -->
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3" id=contact-id>
+      <h2 id=contact-id><u>Contact Form</u></h2><br>
+
+      <form id="contact-id" class="needs-validation" novalidate>
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Fisrt name:</label>
+          <div class="col-10">
+            <input name="inputname" class="form-control" type="text" value="" id="example-text-input" placeholder = "First name is enough..!" pattern="[a-zA-Z0-9\s]+"
+              required>
+            <div class="invalid-feedback">
+              Please provide a valid name.
+            </div>
+          </div>
+        </div>
+        <div class="form-group row ">
+          <label for="example-email-input" class="col-2 col-form-label">Email:</label>
+          <div class="col-10">
+            <input name="inputemail" class="form-control" type="email" value="" id="example-email-input" required>
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="exampleTextarea" class="col-2 col-form-label">Comments:</label>
+          <div class="col-10">
+            <textarea name="inputcomment" class="form-control" id="exampleTextarea" rows="3" placeholder="Write something to us.."
+              required></textarea>
+            <div class="invalid-feedback">
+              Please provide a Message.
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        <script>
+          $(document).ready(function () {
+            $('#comment').css({ "display": "none" });
+            $('#comment').css({ "background-color:": "black" });
+            $('#reset').click(() => {
+              $("strong").html("Clear Value").css("color", "white");
+            });
+            $('#button').click(function () {
+              if ($('#example-text-input').val().trim().length === 0) {
+                console.log("My check")
+                $('#comment').css({ "display": "none" });
+                $('#comment').css({ "background-color:": "black" });
+                verify();
+              } else {
+                $('#comment').css({ "display": "block" });
+                $('#comment').css({ "background-color:": "black" });
+                verify();
+              }
+            })
+          })
+        </script>
+        <br><br>
+        <div class="col-sm-offset-4 col-xs-offset-5">
+          <button type="button" id="button" class="btn btn-default btn-sm">Get vowel count in Name</button>
+          <button type="reset" id="reset" class="btn btn-default btn-sm">Clear Value</button>
+        </div>
+        <div class="col-sm-offset-4 col-xs-offset-5">
+          <div class="form-group">
+            <br>
+            <label for="vowels" class="control-label col-sm-2  ">Vowels:</label>
+            <div class=" col-sm-4np alert alert-success " id="comment">
+            </div><br>
+            <a href="test/test.html">QUnit test results</a>.
+          </div>
+        </div>
+      </form><br>
+
+      <aside>
+        <p><u><i>
+              <h3>Connect via</h3>
+            </i></u></p>
+        <p id="asidep1"><a href="https://www.linkedin.com/in/srujana-reddy-b2537376/">Linkedin</a></p>
+        <p id="asidep1"><a href="https://github.com/srujanagattu">Github</a></p>
+        <p id="asidep1"><a href="https://bitbucket.org/srujana_gattu/">Bitbucket</a></p>
+      </aside>
+    </div>
+  </div>
+  <!-- /column -->
+</div>
+<!-- /row -->
+
+</div>
+<script src="js/contact.js" defer></script>
+<script src="js/calculation.js"></script>
+<% include footer %>

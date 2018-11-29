@@ -1,0 +1,52 @@
+<% include header %>
+
+
+    <link rel="stylesheet" type="text/css" href="css/game.css" />
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <h2>Play your game.Have fun!!!</h2>
+   </header>
+  
+  <div id="winnerDisplay" class="winner_Status"></div>
+  <main>
+
+    <div class="box" id="upper-left"></div>
+    <div class="box" id="upper-mid"> </div>
+    <div class="box" id="upper-right"> </div>
+
+    <div class="box" id="center-left"> </div>
+    <div class="box" id="center-mid"> </div>
+    <div class="box" id="center-right"> </div>
+
+    <div class="box" id="lower-left"> </div>
+    <div class="box" id="lower-mid"> </div>
+    <div class="box" id="lower-right"> </div>
+  </main>
+  <div class="playbutton">
+    <button class="btn btn-primary btn-play" onclick="playGame()">Play</button><br><br>
+  </div>
+  <aside>
+
+    <div>
+      <h2>Specification</h2>
+      <div class="box">
+        <ul>
+          <li>Uses full-width header and footer.</li>
+          <li>Uses main 3 x 3 css grid, each with a section.</li>
+          <li>When user clicks a childless section, it adds an X.</li>
+          <li>If the move was valid, it selects a section for the computer and adds an O.</li>
+        </ul>
+        <ol>
+          <li>Improve the computer's selection algorithm.</li>
+          <li>Add an algorithm to check for a winner.</li>
+          <li>If winner, announce the winner and end the game.</li>
+          <li>Add "Play again?" button to clear the board.</li>
+          <li>Combine AddX and AddO into a single function.</li>
+        </ol>
+      </div>
+    </div>
+  </aside>
+  
+  <script src="js/game.js" defer></script>
+
+<% include footer %>

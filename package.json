@@ -1,0 +1,22 @@
+{
+    "name": "a03",
+    "version": "0.0.1",
+    "description": "resume app",
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "latest",
+        "ejs": "latest",
+        "express": "^4.16.4",
+        "morgan": "latest"
+    },
+    "scripts":{
+        "start" : "node app.js"
+    },
+    "author": "Srujana Gattu",
+    "homepage": "https://bitbucket.org/srujana_gattu/a03",
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/srujana_gattu/a03"
+    },
+    "license": "Apache-2.0"
+}
